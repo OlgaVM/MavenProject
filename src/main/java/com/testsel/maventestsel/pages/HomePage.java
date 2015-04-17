@@ -27,18 +27,7 @@ public class HomePage {
     }
     public  boolean CheckHomePage(String login)
     {
-        try
-        {
-        this._login = login;
-       _span = webDriver.findElement(By.xpath("//span[contains(.,'OlgaVM')]"));
-         return true;     
-      // webDriver.findElement(By.linkText("/"+_login));
-        }
-        catch(Exception ex)
-        {
-            return false;
-        }
-       
+       return webDriver.findElements(By.xpath("//span[text()='OlgaVM']")).size() > 0;
     }
     
 }

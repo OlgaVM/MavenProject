@@ -34,6 +34,8 @@ public class GitHubTest extends TestCase
         
        HomePage homePage = new HomePage(webDriver);
         Assert.assertTrue(homePage.CheckHomePage(user.login.toString()));
+        
+        webDriver.quit();
     }
 
   
