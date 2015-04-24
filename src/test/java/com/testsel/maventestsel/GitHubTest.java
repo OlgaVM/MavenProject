@@ -22,7 +22,8 @@ public class GitHubTest extends TestCase
    //@TestSuite
     public static void testLogin()
     {
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+       System.setProperty("webdriver.chrome.driver", "D:\\MavenProject\\mavenTestSel2\\chromedriver.exe");
+       //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
         WebDriver webDriver = new ChromeDriver();
         webDriver.get("https://github.com/login");
         webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
